@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="fileOperationTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xKH-5m-s9c"/>
+                        <viewControllerLayoutGuide type="bottom" id="qa2-yZ-7lJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEG-Ha-sB7">
+                                <rect key="frame" x="540" y="130" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="rWk-m0-Kkt"/>
+                                    <constraint firstAttribute="height" constant="30" id="z45-p9-GHo"/>
+                                </constraints>
+                                <state key="normal" title="写字符串"/>
+                                <connections>
+                                    <action selector="writeFileClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FJI-e2-hfQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzf-Ny-a4f">
+                                <rect key="frame" x="555" y="90" width="45" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="RQw-9v-3i5"/>
+                                    <constraint firstAttribute="height" constant="30" id="YnN-Du-UPD"/>
+                                </constraints>
+                                <state key="normal" title="读文件"/>
+                                <connections>
+                                    <action selector="readFileClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQp-9h-Pw1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J59-oy-NC4">
+                                <rect key="frame" x="270" y="130" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QX9-QT-ahz"/>
+                                    <constraint firstAttribute="width" constant="60" id="gGf-76-ypH"/>
+                                </constraints>
+                                <state key="normal" title="移动文件"/>
+                                <connections>
+                                    <action selector="moveFileClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D81-YX-Fle"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQW-dc-z3b">
+                                <rect key="frame" x="0.0" y="130" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="7lv-mf-wkg"/>
+                                    <constraint firstAttribute="height" constant="30" id="ye1-DQ-iMj"/>
+                                </constraints>
+                                <state key="normal" title="判断文件是否存在"/>
+                                <connections>
+                                    <action selector="fileIsExistClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hh2-uJ-g7m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yab-nL-8yS">
+                                <rect key="frame" x="248" y="170" width="105" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="395-zC-IAw"/>
+                                    <constraint firstAttribute="width" constant="105" id="a8w-Ev-aIo"/>
+                                </constraints>
+                                <state key="normal" title="计算某文件大小"/>
+                                <connections>
+                                    <action selector="calculateSizeOfFileClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vAN-fK-Lfp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ty-rG-pWR">
+                                <rect key="frame" x="233" y="218" width="135" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UqI-fe-OkO"/>
+                                    <constraint firstAttribute="width" constant="135" id="aUD-4I-awM"/>
+                                </constraints>
+                                <state key="normal" title="计算整个文件夹大小"/>
+                                <connections>
+                                    <action selector="calculateSizeOfFolderClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kCE-W5-3HX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2C-9T-wGc">
+                                <rect key="frame" x="0.0" y="171" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Hcs-sV-31s"/>
+                                    <constraint firstAttribute="width" constant="75" id="lvB-NS-B6U"/>
+                                </constraints>
+                                <state key="normal" title="创建文件夹"/>
+                                <connections>
+                                    <action selector="createFolderClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oqB-tQ-fP6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFV-jo-3jh">
+                                <rect key="frame" x="0.0" y="348" width="600" height="40"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eoJ-mV-fIz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入目标文件(夹)名称" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rPJ-PK-ft8">
+                                <rect key="frame" x="0.0" y="40" width="600" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6tX-Vx-eYs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5s-Fu-fzN">
+                                <rect key="frame" x="0.0" y="218" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="WzF-Rs-IKc"/>
+                                    <constraint firstAttribute="height" constant="30" id="alf-e6-4Jg"/>
+                                </constraints>
+                                <state key="normal" title="创建文件"/>
+                                <connections>
+                                    <action selector="createFileClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xBc-UZ-R2F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOE-zB-oeB">
+                                <rect key="frame" x="265" y="90" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DV4-y0-QAe"/>
+                                    <constraint firstAttribute="width" constant="70" id="IST-hQ-0gs"/>
+                                </constraints>
+                                <state key="normal" title="删除文件"/>
+                                <connections>
+                                    <action selector="delFileClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nLm-ye-qU2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DO-7W-JPW">
+                                <rect key="frame" x="555" y="170" width="45" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="R9H-70-gEx"/>
+                                    <constraint firstAttribute="width" constant="45" id="V6w-BB-Ktn"/>
+                                </constraints>
+                                <state key="normal" title="写数组"/>
+                                <connections>
+                                    <action selector="writeArrayClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pDD-gQ-Y4V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmw-rc-5wo">
+                                <rect key="frame" x="555" y="210" width="45" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7Ap-Wq-ZHh"/>
+                                    <constraint firstAttribute="width" constant="45" id="MnG-7n-Z5L"/>
+                                </constraints>
+                                <state key="normal" title="写字典"/>
+                                <connections>
+                                    <action selector="writeDictionary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RJI-SA-rxe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9A-I9-I7r">
+                                <rect key="frame" x="0.0" y="90" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="DFj-E3-eVg"/>
+                                    <constraint firstAttribute="height" constant="30" id="Qcp-do-rb9"/>
+                                </constraints>
+                                <state key="normal" title="当前目录下文件"/>
+                                <connections>
+                                    <action selector="captureAllFileClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZR1-EY-v0p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cFV-jo-3jh" secondAttribute="trailing" id="1Ei-Qx-4UV"/>
+                            <constraint firstItem="kQW-dc-z3b" firstAttribute="baseline" secondItem="J59-oy-NC4" secondAttribute="baseline" id="1XI-zP-awC"/>
+                            <constraint firstItem="kQW-dc-z3b" firstAttribute="leading" secondItem="B9A-I9-I7r" secondAttribute="leading" id="4BR-lI-xvZ"/>
+                            <constraint firstItem="v5s-Fu-fzN" firstAttribute="baseline" secondItem="9ty-rG-pWR" secondAttribute="baseline" id="8rp-gF-oS4"/>
+                            <constraint firstItem="Rzf-Ny-a4f" firstAttribute="trailing" secondItem="lEG-Ha-sB7" secondAttribute="trailing" id="CMh-ax-e1h"/>
+                            <constraint firstItem="yab-nL-8yS" firstAttribute="top" secondItem="J59-oy-NC4" secondAttribute="bottom" constant="10" id="EC7-Nt-3qV"/>
+                            <constraint firstItem="4DO-7W-JPW" firstAttribute="top" secondItem="lEG-Ha-sB7" secondAttribute="bottom" constant="10" id="Er3-25-9RR"/>
+                            <constraint firstItem="v5s-Fu-fzN" firstAttribute="leading" secondItem="B9A-I9-I7r" secondAttribute="leading" id="FzG-NP-Pcb"/>
+                            <constraint firstItem="rPJ-PK-ft8" firstAttribute="top" secondItem="xKH-5m-s9c" secondAttribute="bottom" constant="20" id="Ife-UD-p1m"/>
+                            <constraint firstItem="a2C-9T-wGc" firstAttribute="top" secondItem="kQW-dc-z3b" secondAttribute="bottom" constant="11" id="KkV-km-Ta1"/>
+                            <constraint firstAttribute="trailing" secondItem="rPJ-PK-ft8" secondAttribute="trailing" id="Mcu-nM-Bts"/>
+                            <constraint firstItem="yab-nL-8yS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NVL-3d-TI5"/>
+                            <constraint firstItem="9ty-rG-pWR" firstAttribute="top" secondItem="yab-nL-8yS" secondAttribute="bottom" constant="10" id="SKw-ON-XDA"/>
+                            <constraint firstItem="J59-oy-NC4" firstAttribute="top" secondItem="ZOE-zB-oeB" secondAttribute="bottom" constant="10" id="VkV-wF-cW8"/>
+                            <constraint firstItem="J59-oy-NC4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WeV-t1-RaK"/>
+                            <constraint firstItem="ZOE-zB-oeB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y3Q-Q2-fnR"/>
+                            <constraint firstItem="B9A-I9-I7r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Z3b-WS-wlg"/>
+                            <constraint firstItem="ZOE-zB-oeB" firstAttribute="top" secondItem="rPJ-PK-ft8" secondAttribute="bottom" constant="20" id="ZWR-er-hcp"/>
+                            <constraint firstItem="a2C-9T-wGc" firstAttribute="leading" secondItem="B9A-I9-I7r" secondAttribute="leading" id="bkZ-0i-DdQ"/>
+                            <constraint firstItem="B9A-I9-I7r" firstAttribute="top" secondItem="rPJ-PK-ft8" secondAttribute="bottom" constant="20" id="d3a-4k-y6o"/>
+                            <constraint firstItem="rPJ-PK-ft8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dgz-yK-Zu5"/>
+                            <constraint firstItem="4DO-7W-JPW" firstAttribute="trailing" secondItem="lEG-Ha-sB7" secondAttribute="trailing" id="fQP-Kf-Obb"/>
+                            <constraint firstItem="Rzf-Ny-a4f" firstAttribute="top" secondItem="rPJ-PK-ft8" secondAttribute="bottom" constant="20" id="fua-F4-1FT"/>
+                            <constraint firstItem="Jmw-rc-5wo" firstAttribute="top" secondItem="4DO-7W-JPW" secondAttribute="bottom" constant="10" id="gXN-kC-VfT"/>
+                            <constraint firstItem="cFV-jo-3jh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lDC-Xp-nYk"/>
+                            <constraint firstAttribute="trailing" secondItem="Rzf-Ny-a4f" secondAttribute="trailing" id="nKb-RP-pf7"/>
+                            <constraint firstItem="Jmw-rc-5wo" firstAttribute="trailing" secondItem="lEG-Ha-sB7" secondAttribute="trailing" id="pKh-0S-PNh"/>
+                            <constraint firstItem="9ty-rG-pWR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pZU-Jy-glA"/>
+                            <constraint firstItem="lEG-Ha-sB7" firstAttribute="top" secondItem="Rzf-Ny-a4f" secondAttribute="bottom" constant="10" id="vnu-Wu-2f3"/>
+                            <constraint firstItem="cFV-jo-3jh" firstAttribute="top" secondItem="9ty-rG-pWR" secondAttribute="bottom" constant="100" id="yFx-sb-jsp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="basePath" destination="cFV-jo-3jh" id="5gP-4v-zVD"/>
+                        <outlet property="fileNameInput" destination="rPJ-PK-ft8" id="QUa-4v-ydp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="272"/>
+        </scene>
+    </scenes>
+</document>
